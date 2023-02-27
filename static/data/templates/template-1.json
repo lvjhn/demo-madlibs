@@ -1,0 +1,6 @@
+{
+    "partsOfSpeech": {
+        "noun" : "Verb ending in -ed"
+    }, 
+    "text": "Hello, from template 1 [name:noun] [color:noun]!"
+}

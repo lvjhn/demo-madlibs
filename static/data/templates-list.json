@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1, 
+        "title": "Template 1", 
+        "url": "/data/templates/template-1.json"
+    },
+    {
+        "id": 2, 
+        "title": "Template 2", 
+        "url": "/data/templates/template-2.json"
+    },
+    {
+        "id": 3, 
+        "title": "Template 3", 
+        "url": "/data/templates/template-3.json"
+    }
+]
