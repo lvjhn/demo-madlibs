@@ -23,7 +23,7 @@
 
     onMount(async () => {
         _app.staticData.http
-            .get("/data/templates/template-" + openedTemplate.id + ".json") 
+            .get(openedTemplate.url) 
             .then(response => {
                 template = response.data;
                 initMadLibs(template);
@@ -130,7 +130,7 @@
             }
 
             .pos {
-                width: 200px;
+                width: 250px;
                 text-align: center;
                 margin-top: 10px;
                 font-style: italic;

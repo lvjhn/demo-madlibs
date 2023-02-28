@@ -1,17 +1,17 @@
 [
     {
         "id": 1, 
-        "title": "Template 1", 
-        "url": "/data/templates/template-1.json"
+        "title": "1984 (George Orwell) - Chapter 1", 
+        "url": "/data/templates/1984-orwell-chapter-1.json"
     },
     {
         "id": 2, 
-        "title": "Template 2", 
-        "url": "/data/templates/template-2.json"
+        "title": "The War of the Worlds (H.G. Wells) - Chapter I", 
+        "url": "/data/templates/war-and-peace-chapter-1.json"
     },
     {
         "id": 3, 
-        "title": "Template 3", 
-        "url": "/data/templates/template-3.json"
+        "title": "Animal Farm (Orwell) - Chapter 1", 
+        "url": "/data/templates/animal-farm-chapter-1.json"
     }
 ]
