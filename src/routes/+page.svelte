@@ -32,46 +32,40 @@
 </script> 
 
 <div class="home">
-    {#if isReady}
-        <div class="action-container">
-            <div class="title">
-                <h2>Demo MadLibs</h2>
-            </div>
-            <div class="content">
-                {#if action == 'index'}
-                    <div class="mad-libs-index">
-                        <MadLibsIndex 
-                            on:open-template={onOpenTemplate}
-                        />
-                    </div>
-                {:else if action == 'form'}
-                    <div class="mad-libs-form">
-                        <MadLibsForm 
-                            {openedTemplate}
-                            on:goto={onGoto}
-                            on:post-result={onPostResult}
-                        /> 
-                    </div>
-                {:else if action == 'result'}
-                    <div class="mad-libs-result">
-                        <MadLibsResult 
-                            on:goto={onGoto}
-                            {openedTemplate}
-                            bind:result={templateResult}
-                        />
-                    </div> 
-                {:else} 
-                    <div class="unknown-action"> 
-                        Unknown action
-                    </div>
-                {/if}
-            </div>
+    <div class="action-container">
+        <div class="title">
+            <h2>Demo MadLibs</h2>
         </div>
-    {:else} 
-        <div class="loading">
-            Loading app...
-        </div> 
-    {/if}
+        <div class="content">
+            {#if action == 'index'}
+                <div class="mad-libs-index">
+                    <MadLibsIndex 
+                        on:open-template={onOpenTemplate}
+                    />
+                </div>
+            {:else if action == 'form'}
+                <div class="mad-libs-form">
+                    <MadLibsForm 
+                        {openedTemplate}
+                        on:goto={onGoto}
+                        on:post-result={onPostResult}
+                    /> 
+                </div>
+            {:else if action == 'result'}
+                <div class="mad-libs-result">
+                    <MadLibsResult 
+                        on:goto={onGoto}
+                        {openedTemplate}
+                        bind:result={templateResult}
+                    />
+                </div> 
+            {:else} 
+                <div class="unknown-action"> 
+                    Unknown action
+                </div>
+            {/if}
+        </div>
+    </div>
 </div>
 
 <style lang="scss"> 
